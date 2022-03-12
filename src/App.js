@@ -9,6 +9,7 @@ import {
   Typography,
 } from '@mui/material';
 import { blue } from '@mui/material/colors';
+import StarRatings from './Components/StarRatings';
 
 const theme = createTheme({
   palette: {
@@ -28,7 +29,7 @@ function App() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            bgcolor: '#696969',
+            bgcolor: '#696970',
           }}
         >
           <Typography component="h2" variant="h5">
@@ -45,6 +46,16 @@ function App() {
                   autoFocus
                 />
               </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  name="secondWrestler"
+                  id="second-Wrestler"
+                  fullWidth
+                  label="Wrestler #2"
+                  autoFocus
+                />
+              </Grid>
+              <StarRatings />
             </Grid>
           </Box>
           <Button variant="contained">Track</Button>
