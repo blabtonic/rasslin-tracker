@@ -23,7 +23,7 @@ export default function StarRatings() {
     <Typography>
       <Rating
         name="rating-feedback"
-        value={1}
+        value={0}
         precision={0.5}
         onChange={(event, newValue) => {
           setValue(newValue);
@@ -39,12 +39,3 @@ export default function StarRatings() {
     </Typography>
   );
 }
-
-/*
-              <Typography component="h3" variant="h5">
-                Ratings
-                <Rating
-                  name="half-rating"
-                />
-              </Typography>
-*/
